@@ -113,8 +113,8 @@
             <div id="navigation" :class="toggle ? 'block' : 'none'">
 
                 <ul class="navigation-menu justify-start" :class="navlight ? 'nav-light' : ''">
-                    <li :class="current === '/index-two' ? 'active' : ''">
-                        <NuxtLink to="/index-two" class="sub-menu-item">Home</NuxtLink>
+                    <li :class="current === '/' ? 'active' : ''">
+                        <NuxtLink to="/" class="sub-menu-item">Home</NuxtLink>
                     </li>
                     <li :class="current === '/program-studi' ? 'active' : ''">
                         <NuxtLink to="/program-studi" class="sub-menu-item">Program Studi</NuxtLink>

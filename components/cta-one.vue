@@ -19,5 +19,7 @@
 <script setup>
     import CountUp from 'vue-countup-v3'
     import { counterData } from '@/data/data';
-    import bg from '@/assets/images/bg/2.jpg'
+     import bg from '@/assets/images/team/img-4.jpg'
+    // import bg from '@/assets/images/bg/2.jpg'
+   
 </script>

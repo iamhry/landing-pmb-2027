@@ -65,24 +65,38 @@
             <div class="container relative lg:mt-18 mt-16">
                 <div class="grid grid-cols-1 pb-6 text-center">
                     <span class="text-violet-600 font-semibold mb-3 uppercase">Informasi Pendaftaran</span>
-                    <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Mudah, Cepat, dan Terjangkau untuk Semua</h4>
-                    <p class="text-slate-400 max-w-xl mx-auto">Proses daftar di sini gampang banget. Tinggal cek syaratnya, ikuti alurnya, dan kamu langsung bisa mulai.</p>
+                    <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Mudah, Cepat,
+                        dan Terjangkau untuk Semua</h4>
+                    <p class="text-slate-400 max-w-xl mx-auto">Proses daftar di sini gampang banget. Tinggal cek
+                        syaratnya, ikuti alurnya, dan kamu langsung bisa mulai kuliah.</p>
                 </div>
-                <AppFeature />
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+                    <FaqAbout />
+                    <div class="lg:col-span-6 md:col-span-5">
+                        <Syarat />
+                    </div>
+                </div>
             </div>
-            
+            <section class="pt-6">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class=" mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                        Mitra Kami</h3>
+                </div>
+                <PartnerImg />
+            </section>
 
-            <div class="container relative md:mt-24 mt-16">
+            <!-- <div class="container relative md:mt-24 mt-16">
                 <AboutOne :title="true" />
-            </div>
+            </div> -->
 
             <div class="container relative md:mt-24 mt-16">
-                <div class="grid grid-cols-1 pb-6 text-center">
-                    <span class="text-violet-600 font-semibold mb-3 uppercase">Courses</span>
-                    <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Explore Our
-                        Best Courses</h4>
-                    <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our
-                        online education platform pursue a new career.</p>
+                <div class="grid grid-cols-1  text-center">
+                    <span class="text-violet-600 font-semibold mb-3 uppercase">Berita & Event PMB</span>
+                    <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Info PMB
+                        Terbaru</h4>
+                    <p class="text-slate-400 max-w-xl mx-auto">Jangan lewatkan berita, pengumuman, dan agenda penting
+                        seputar Penerimaan Mahasiswa Baru (PMB). Temukan informasi terkini, tips pendaftaran, dan event
+                        kampus untuk mempersiapkan langkah terbaikmu.</p>
                 </div>
 
                 <div class="grid grid-cols-1 relative mt-3">
@@ -93,13 +107,13 @@
 
                 <div class="grid md:grid-cols-12 grid-cols-1 mt-6">
                     <div class="md:col-span-12 text-center">
-                        <NuxtLink to="/grid" class="text-slate-400 hover:text-violet-600 duration-500 ease-in-out">See
-                            More Courses <i class="mdi mdi-arrow-right align-middle"></i></NuxtLink>
+                        <NuxtLink to="/grid" class="text-slate-400 hover:text-violet-600 duration-500 ease-in-out">Lihat
+                            Berita Lainnya <i class="mdi mdi-arrow-right align-middle"></i></NuxtLink>
                     </div>
                 </div>
             </div>
 
-            <div class="container relative">
+            <!-- <div class="container relative">
                 <div class="grid grid-cols-1 pb-6 text-center">
                     <span class="text-violet-600 font-semibold mb-3 uppercase">Categories</span>
                     <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Explore 1500+
@@ -110,15 +124,15 @@
                 </div>
 
                 <Categories />
-            </div>
+            </div> -->
+
         </section>
-
-        <ClientOnly>
+        <!-- <ClientOnly>
             <CtaOne />
-        </ClientOnly>
+        </ClientOnly> -->
 
-        <section class="relative lg:py-24 py-16">
-            <div class="container relative">
+        <section class="relative lg:py-16 py-16">
+            <!-- <div class="container relative">
                 <div class="grid grid-cols-1 pb-6 text-center">
                     <span class="text-violet-600 font-semibold mb-3 uppercase">Teachers</span>
                     <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Expert
@@ -127,20 +141,21 @@
                         online education platform pursue a new career.</p>
                 </div>
                 <ExpertTeam />
-            </div>
+            </div> -->
 
-            <div class="container relative lg:mt-24 mt-16">
-                <div class="grid grid-cols-1 pb-8 text-center">
-                    <span class="text-violet-600 font-semibold mb-3 uppercase">Reviews</span>
-                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">What Our
-                        Students Say ?</h3>
-                    <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our
-                        online education platform pursue a new career.</p>
+            <div class="container relative lg:mt-24 mt-5">
+                <div class="grid grid-cols-1 pb-10 text-center">
+                    <span class="text-violet-600 font-semibold mb-3 uppercase">Testimoni Alumni</span>
+                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Apa Kata
+                        Mereka?</h3>
+                    <!-- <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our
+                        online education platform pursue a new career.</p> -->
                 </div>
                 <ClientOnly>
                     <ClientOne />
                 </ClientOnly>
             </div>
+
         </section>
 
         <Footer />
@@ -160,4 +175,5 @@ import home4 from '@/assets/images/team/img-4.jpg'
 import home5 from '@/assets/images/team/img-12.jpg'
 import home6 from '@/assets/images/team/img-5.jpg'
 import home7 from '@/assets/images/team/img-8.jpg'
+import Syarat from '~/components/syarat.vue'
 </script>
