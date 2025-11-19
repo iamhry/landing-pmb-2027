@@ -5,7 +5,7 @@
                 <div class="grid grid-cols-1">
                     <div class="flex flex-col min-h-screen justify-center md:px-10 py-10 px-4">
                         <div class="text-center">
-                            <NuxtLink to="/"><img :src="logo" class="mx-auto" alt=""/></NuxtLink>
+                            <NuxtLink to="/"><img :src="logo" class="mx-auto" width="5%" alt=""/></NuxtLink>
                         </div>
                         <div class="title-heading text-center my-auto">
                             <img :src="errorImg" class="mx-auto" alt=""/>
@@ -31,7 +31,7 @@
 <script setup>
     import { ref } from 'vue';
 
-    import logo from '@/assets/images/logo-icon-64.png'
+    import logo from '@/assets/images/logo/umpku_logo_2025.png'
     import errorImg from '@/assets/images/error.png'
     const year = ref(new Date().getFullYear())
 </script>

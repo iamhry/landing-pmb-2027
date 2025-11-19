@@ -5,6 +5,24 @@ import partner4 from '@/assets/images/logo-mitra/rs_soeradji.png'
 import partner5 from '@/assets/images/logo-mitra/logo-uns.png'
 import partner6 from '@/assets/images/logo-mitra/rs_uns.png'
 import partner7 from '@/assets/images/logo-mitra/logo_kss.svg'
+import partner8 from '@/assets/images/logo-mitra/faniaersapratama_logo.jpeg'
+import partner9 from '@/assets/images/logo-mitra/assyifa.png'
+import partner10 from '@/assets/images/logo-mitra/sampangan.png'
+import partner11 from '@/assets/images/logo-mitra/temanggung.png'
+import partner12 from '@/assets/images/logo-mitra/gemolong.png'
+import partner13 from '@/assets/images/logo-mitra/sukoharjo.png'
+import partner14 from '@/assets/images/logo-mitra/batang.png'
+import partner15 from '@/assets/images/logo-mitra/soedjati_soemodiardjo_grobogan.png'
+import partner16 from '@/assets/images/logo-mitra/caruban.png'
+import partner17 from '@/assets/images/logo-mitra/enuma_technology_logo.jpeg'
+import partner18 from '@/assets/images/logo-mitra/profil-rs-nirmala-suri.jpg'
+import partner19 from '@/assets/images/logo-mitra/sragen_soehadi.png'
+import partner20 from '@/assets/images/logo-mitra/rembang.png'
+import partner21 from '@/assets/images/logo-mitra/linggarjati.png'
+import partner22 from '@/assets/images/logo-mitra/soedjati_soemodiardjo_grobogan.png'
+import partner23 from '@/assets/images/logo-mitra/soedjati_soemodiardjo_grobogan.png'
+import partner24 from '@/assets/images/logo-mitra/soedjati_soemodiardjo_grobogan.png'
+import partner25 from '@/assets/images/logo-mitra/soedjati_soemodiardjo_grobogan.png'
 
 import alumni1 from '@/assets/images/alumni/01-rev.png'
 import alumni2 from '@/assets/images/alumni/02.png'
@@ -50,9 +68,13 @@ import video8 from '@/assets/images/course/video/8.mp4'
 import video9 from '@/assets/images/course/video/9.mp4'
 
 export const partnerData = [
+    partner1, partner2, partner3, partner4, partner6, partner7,partner8, partner9,
+     partner10, partner11, partner12, partner13, partner14, partner15, partner16, partner17, partner18, partner19, partner20, partner21, 
+    //  partner22, partner23, partner24, partner25
+]
+export const partnerMitra = [
     partner1, partner2, partner3, partner4, partner6, partner7
 ]
-
 export const featureData = [
     {
         icon: 'iconoir-thumbs-up',

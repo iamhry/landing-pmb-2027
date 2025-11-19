@@ -80,9 +80,22 @@
             <section class="pt-6">
                 <div class="grid grid-cols-1 pb-8 text-center">
                     <h3 class=" mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
-                        Mitra Kami</h3>
+                        Mitra Kami
+                    </h3>
                 </div>
-                <PartnerImg />
+                <PartnerMitraIndex />
+                
+   <div class="grid md:grid-cols-12 grid-cols-1 mt-6">
+      <div class="md:col-span-12 text-center">
+        <NuxtLink
+          to="/data-mitra"
+          class="text-slate-400 hover:text-violet-600 duration-500 ease-in-out font-medium inline-flex items-center"
+        >
+          Lihat Mitra Lainnya
+          <i class="mdi mdi-arrow-right align-middle ml-2"></i>
+        </NuxtLink>
+      </div>
+    </div>
             </section>
 
             <!-- <div class="container relative md:mt-24 mt-16">
@@ -167,6 +180,7 @@
 </template>
 
 <script setup>
+import PartnerMitraIndex from '~/components/partner-mitra-index.vue'
 import bg from '@/assets/images/bg/bg.png'
 import home1 from '@/assets/images/team/img-1.jpg'
 import home2 from '@/assets/images/team/img-2.jpg'

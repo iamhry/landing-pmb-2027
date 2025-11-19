@@ -92,9 +92,10 @@
             <div class="container relative text-center">
                 <div class="grid md:grid-cols-2 items-center gap-6">
                     <div class="md:text-start text-center">
-                        <p class="mb-0 text-gray-300">© {{ year }} Edupath. Design & Develop with <i
-                                class="mdi mdi-heart text-red-600"></i> by <a href="https://shreethemes.in/"
-                                target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        
+                        <p class="mb-0 text-gray-300">
+                            <FooterCopyright />
+                        </p>
                     </div>
 
                     <ul class="list-disc footer-list md:text-end text-center space-x-3">

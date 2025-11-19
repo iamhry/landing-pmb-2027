@@ -119,47 +119,35 @@
                     <li :class="current === '/program-studi' ? 'active' : ''">
                         <NuxtLink to="/program-studi" class="sub-menu-item">Program Studi</NuxtLink>
                     </li>
-
                     <li class="has-submenu parent-parent-menu-item"
-                        :class="['/grid', '/grid-sidebar', '/list', '/list-sidebar', '/youtube-listing', '/video-listing', '/course-detail', '/course-detail-two'].includes(current) ? 'active' : ''">
+                        :class="['/biaya-pendaftaran', '/biaya-studi'].includes(current) ? 'active' : ''">
+                        <NuxtLink :to="[]" @click="submenu(openMenu === '/page-item' ? '' : '/page-item')">Biaya
+                        </NuxtLink><span class="menu-arrow"></span>
+                        <ul class="submenu" :class="[].includes(openMenu) ? 'open' : ''">
+                            <li :class="current === '/biaya-pendaftaran' ? 'active' : ''">
+                                <NuxtLink to="/biaya-pendaftaran" class="sub-menu-item">Biaya Pendaftaran</NuxtLink>
+                            </li>
+                            <li :class="current === '/biaya-studi' ? 'active' : ''">
+                                <NuxtLink to="/biaya-studi" class="sub-menu-item">Biaya Studi</NuxtLink>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu parent-parent-menu-item"
+                        :class="['/mitra', '/grid-sidebar', '/list', '/list-sidebar', '/youtube-listing', '/video-listing', '/course-detail', '/course-detail-two'].includes(current) ? 'active' : ''">
                         <NuxtLink :to="[]" @click="submenu(openMenu === '/courses-item' ? '' : '/courses-item')">
                             Informasi</NuxtLink><span class="menu-arrow"></span>
                         <ul class="submenu"
                             :class="['/courses-item', '/grid-item', '/list-item', '/video-item', '/detail-item'].includes(openMenu) ? 'open' : ''">
-                            <li class="has-submenu parent-menu-item"
-                                :class="['/grid', '/grid-sidebar'].includes(current) ? 'active' : ''">
-                                <NuxtLink :to="[]" @click="submenu(openMenu === '/grid-item' ? '' : '/grid-item')">
-                                    Biaya</NuxtLink><span class="submenu-arrow"></span>
-                                <ul class="submenu" :class="['/grid-item'].includes(openMenu) ? 'open' : ''">
-                                    <li :class="current === '/grid' ? 'active' : ''">
-                                        <NuxtLink to="/grid" class="sub-menu-item">Biaya Pendaftaran</NuxtLink>
-                                    </li>
-                                    <li :class="current === '/grid-sidebar' ? 'active' : ''">
-                                        <NuxtLink to="/grid-sidebar" class="sub-menu-item">Biaya Studi</NuxtLink>
-                                    </li>
-                                </ul>
-                            </li>
+
                             <li :class="current === '/evaluasi' ? 'active' : ''" class="parent-menu-item">
                                 <NuxtLink to="/evaluasi">Evaluasi</NuxtLink>
                             </li>
-                             <li :class="current === '/mitra' ? 'active' : ''" class="parent-menu-item">
+                            <li :class="current === '/mitra' ? 'active' : ''" class="parent-menu-item">
                                 <NuxtLink to="/mitra">Mitra</NuxtLink>
                             </li>
-                             <li :class="current === '/faq' ? 'active' : ''" class="parent-menu-item">
+                            <li :class="current === '/faq' ? 'active' : ''" class="parent-menu-item">
                                 <NuxtLink to="/faq">FAQ</NuxtLink>
                             </li>
-                            <!-- <li class="has-submenu parent-menu-item" :class="['/youtube-listing','/video-listing'].includes(current) ? 'active' : ''"><NuxtLink :to="[]" @click="submenu(openMenu === '/video-item' ? '' : '/video-item')"> Video Courses </NuxtLink><span class="submenu-arrow"></span>
-                                <ul class="submenu" :class="['/video-item'].includes(openMenu) ? 'open' : ''">
-                                    <li :class="current === '/youtube-listing' ? 'active' : ''"><NuxtLink to="/youtube-listing" class="sub-menu-item">Youtube Listing</NuxtLink></li>
-                                    <li :class="current === '/video-listing' ? 'active' : ''"><NuxtLink to="/video-listing" class="sub-menu-item">Video Listing</NuxtLink></li>
-                                </ul>  
-                            </li>
-                            <li class="has-submenu parent-menu-item" :class="['/course-detail','/course-detail-two'].includes(current) ? 'active' : ''"><NuxtLink :to="[]" @click="submenu(openMenu === '/detail-item' ? '' : '/detail-item')"> Courses Detail</NuxtLink><span class="submenu-arrow"></span>
-                                <ul class="submenu" :class="['/detail-item'].includes(openMenu) ? 'open' : ''">
-                                    <li :class="current === '/course-detail' ? 'active' : ''"><NuxtLink to="/course-detail" class="sub-menu-item">Courses Detail</NuxtLink></li>
-                                    <li :class="current === '/course-detail-two' ? 'active' : ''"><NuxtLink to="/course-detail-two" class="sub-menu-item">Courses Detail Two</NuxtLink></li>
-                                </ul>  
-                            </li> -->
                         </ul>
                     </li>
 
@@ -169,39 +157,6 @@
                     <li :class="current === '/brosur' ? 'active' : ''">
                         <NuxtLink to="/brosur" class="sub-menu-item">Brosur</NuxtLink>
                     </li>
-
-                    <!-- <li class="has-submenu parent-parent-menu-item" :class="['/features','/pricing','/instructors','/faqs','/blogs','/blog-sidebar','/blog-detail'].includes(current) ? 'active' : ''">
-                        <NuxtLink :to="[]" @click="submenu(openMenu === '/page-item' ? '' : '/page-item')">Pages</NuxtLink><span class="menu-arrow"></span>
-                        <ul class="submenu" :class="['/page-item','/auth-item','/blog-item','/special-item'].includes(openMenu) ? 'open' : ''">
-                            <li :class="current === '/features' ? 'active' : ''"><NuxtLink to="/features" class="sub-menu-item">Features</NuxtLink></li>
-                            <li :class="current === '/pricing' ? 'active' : ''"><NuxtLink to="/pricing" class="sub-menu-item">Pricing</NuxtLink></li>
-                            <li :class="current === '/instructors' ? 'active' : ''"><NuxtLink to="/instructors" class="sub-menu-item">Instructors</NuxtLink></li>
-                            <li :class="current === '/faqs' ? 'active' : ''"><NuxtLink to="/faqs" class="sub-menu-item">Faqs</NuxtLink></li>
-                            <li class="has-submenu parent-menu-item"><NuxtLink :to="[]" @click="submenu(openMenu === '/auth-item' ? '' : '/auth-item')"> Auth Pages </NuxtLink><span class="submenu-arrow"></span>
-                                <ul class="submenu" :class="['/auth-item'].includes(openMenu) ? 'open' : ''">
-                                    <li :class="current === '/login' ? 'active' : ''"><NuxtLink to="/login" class="sub-menu-item">Login</NuxtLink></li>
-                                    <li :class="current === '/signup' ? 'active' : ''"><NuxtLink to="/signup" class="sub-menu-item">Signup</NuxtLink></li>
-                                    <li :class="current === '/forgot-password' ? 'active' : ''"><NuxtLink to="/forgot-password" class="sub-menu-item">Reset Password</NuxtLink></li>
-                                </ul>  
-                            </li>
-                            <li class="has-submenu parent-menu-item" :class="['/blogs','/blog-sidebar','/blog-detail'].includes(current) ? 'active' : ''"><NuxtLink :to="[]" @click="submenu(openMenu === '/blog-item' ? '' : '/blog-item')"> Blog </NuxtLink><span class="submenu-arrow"></span>
-                                <ul class="submenu" :class="['/blog-item'].includes(openMenu) ? 'open' : ''">
-                                    <li :class="current === '/blogs' ? 'active' : ''"><NuxtLink to="/blogs" class="sub-menu-item"> Blogs</NuxtLink></li>
-                                    <li :class="current === '/blog-sidebar' ? 'active' : ''"><NuxtLink to="/blog-sidebar" class="sub-menu-item"> Blog Sidebar</NuxtLink></li>
-                                    <li :class="current === '/blog-detail' ? 'active' : ''"><NuxtLink to="/blog-detail" class="sub-menu-item"> Blog Detail</NuxtLink></li>
-                                </ul> 
-                            </li>
-                            <li class="has-submenu parent-menu-item"><NuxtLink :to="[]" @click="submenu(openMenu === '/special-item' ? '' : '/special-item')"> Special </NuxtLink><span class="submenu-arrow"></span>
-                                <ul class="submenu" :class="['/special-item'].includes(openMenu) ? 'open' : ''">
-                                    <li :class="current === '/comingsoon' ? 'active' : ''"><NuxtLink to="/comingsoon" class="sub-menu-item">Comingsoon</NuxtLink></li>
-                                    <li :class="current === '/maintenance' ? 'active' : ''"><NuxtLink to="/maintenance" class="sub-menu-item">Maintenance</NuxtLink></li>
-                                    <li :class="current === '/404' ? 'active' : ''"><NuxtLink to="/404" class="sub-menu-item">404! Error</NuxtLink></li>
-                                </ul>  
-                            </li>
-                        </ul>
-                    </li>
-            
-                    <li :class="current === '/contactus' ? 'active' : ''"><NuxtLink to="/contactus" class="sub-menu-item">Contact Us</NuxtLink></li> -->
                 </ul>
             </div>
         </div>
