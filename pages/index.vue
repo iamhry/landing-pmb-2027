@@ -17,7 +17,7 @@
                         Temukan tempat itu di Universitas Muhammadiyah PKU Surakarta.</p>
 
                     <div class="mt-6">
-                        <NuxtLink :to="[]"
+                        <NuxtLink to="https://admission.umpku.ac.id/site/landing" target="_blank"
                             class="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-yellow-500 text-white">
                             Daftar Sekarang <i class="mdi mdi-arrow-right align-middle ms-1"></i></NuxtLink>
                     </div>
@@ -131,7 +131,7 @@
             <CtaOne />
         </ClientOnly> -->
 
-        <section class="relative lg:py-16 py-16">
+        <section class="relative lg:pb-12 py-0">
             <!-- <div class="container relative">
                 <div class="grid grid-cols-1 pb-6 text-center">
                     <span class="text-violet-600 font-semibold mb-3 uppercase">Teachers</span>
@@ -143,7 +143,7 @@
                 <ExpertTeam />
             </div> -->
 
-            <div class="container relative lg:mt-24 mt-5">
+            <div class="container relative lg:mt-0 mb-10 mt-5">
                 <div class="grid grid-cols-1 pb-10 text-center">
                     <span class="text-violet-600 font-semibold mb-3 uppercase">Testimoni Alumni</span>
                     <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Apa Kata
@@ -152,7 +152,7 @@
                         online education platform pursue a new career.</p> -->
                 </div>
                 <ClientOnly>
-                    <ClientOne />
+                    <Alumni />
                 </ClientOnly>
             </div>
 

@@ -69,7 +69,7 @@
 
                 </li> -->
                 <li class="inline-block relative">
-                    <NuxtLink to="/login"
+                    <NuxtLink to="https://admission.umpku.ac.id/" target="_blank"
                         class=" inline-flex items-center justify-center px-4 py-2 text-white bg-violet-600 hover:bg-violet-700 rounded-md transition duration-300">
                         <i data-feather="log-in" class="size-4 me-2"></i>Login
                     </NuxtLink>
@@ -142,7 +142,10 @@
                             <li :class="current === '/evaluasi' ? 'active' : ''" class="parent-menu-item">
                                 <NuxtLink to="/evaluasi">Evaluasi</NuxtLink>
                             </li>
-                            <li :class="current === '/faq' ? 'active' : ''" class="parent-menu-item">
+                             <li :class="current === '/mitra' ? 'active' : ''" class="parent-menu-item">
+                                <NuxtLink to="/mitra">Mitra</NuxtLink>
+                            </li>
+                             <li :class="current === '/faq' ? 'active' : ''" class="parent-menu-item">
                                 <NuxtLink to="/faq">FAQ</NuxtLink>
                             </li>
                             <!-- <li class="has-submenu parent-menu-item" :class="['/youtube-listing','/video-listing'].includes(current) ? 'active' : ''"><NuxtLink :to="[]" @click="submenu(openMenu === '/video-item' ? '' : '/video-item')"> Video Courses </NuxtLink><span class="submenu-arrow"></span>

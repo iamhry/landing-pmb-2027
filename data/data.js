@@ -4,7 +4,17 @@ import partner3 from '@/assets/images/logo-mitra/rsud-dr-moewardi.png'
 import partner4 from '@/assets/images/logo-mitra/rs_soeradji.png'
 import partner5 from '@/assets/images/logo-mitra/logo-uns.png'
 import partner6 from '@/assets/images/logo-mitra/rs_uns.png'
-import partner7 from '@/assets/images/logo-mitra/ums.png'
+import partner7 from '@/assets/images/logo-mitra/logo_kss.svg'
+
+import alumni1 from '@/assets/images/alumni/01-rev.png'
+import alumni2 from '@/assets/images/alumni/02.png'
+import alumni3 from '@/assets/images/alumni/03.png'
+import alumni4 from '@/assets/images/team/4.jpg'
+import alumni5 from '@/assets/images/team/5.jpg'
+import alumni6 from '@/assets/images/team/6.jpg'
+import alumni7 from '@/assets/images/team/7.jpg'
+import alumni8 from '@/assets/images/team/8.jpg'
+
 
 import course1 from '@/assets/images/course/1.jpg'
 import course2 from '@/assets/images/course/2.jpg'
@@ -438,24 +448,33 @@ export const counterData = [
 
 export const clientData = [
     {
-        image: team1,
-        name: 'Megan Cade',
-        position: 'Student',
-        desc: `" Online education has allowed me to balance work and study easily. The flexibility of choosing when to study has made it a perfect fit for my busy schedule! "`,
+        image: alumni1,
+        name: 'Andreya Selvi Nurcahyani',
+        position: 'Alumni ',
+        desc: `"
+        Tiga tahun di bangku kuliah telah membentuk kami menjadi pribadi yang lebih tangguh dan peduli. 
+        Lulus dari D3 Keperawatan bukan akhir, melainkan awal dari pengabdian kami untuk melayani masyarakat dengan sepenuh hati. Terima kasih tak terhingga kepada para dosen, 
+        orang tua, dan teman-teman atas bimbingan dan dukungan selama ini. Ilmu dan pengalaman yang kami dapatkan adalah bekal terbaik untuk mengabdikan diri di dunia kesehatan.
+        "`,
         rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
     },
     {
-        image: team2,
-        name: 'Ramon Gibson',
-        position: 'Student',
-        desc: `" I was surprised by how interactive online courses can be. The live discussions and group projects kept me engaged, and I felt connected to my classmates. "`,
+        image: alumni2,
+        name: 'Imam Duta Setyawan',
+        position: 'Alumni',
+        desc: `" 
+        Karya tulis ilmiah mengajarkan saya tentang perjuangan, dosen mengajar saya bertawakal, 
+        seminar mengajarkan saya kesabaran terimakasih Universitas Muhammadiyah PKU Surakarta, 
+        aku lulus bukan karena pintar tapi karena kuat mental.
+        "`,
         rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
     },
     {
-        image: team3,
-        name: 'Stella Robinson',
-        position: 'Student',
-        desc: `" Studying online saved me a lot of money, and I didn't have to commute. The quality of the courses was fantastic, and I could learn at my own pace. "`,
+        image: alumni3,
+        name: 'Tina Nuraini',
+        position: 'Alumni ',
+        desc: `" Jujur, dulu nggak pernah kebayang bakal kuliah di sini, apalagi di bidang kesehatan khususnya kebidanan. Tapi ternyata perjalanan ini ngasih aku banyak pengalaman, ilmu dan teman yang bikin kuliah dan sudut pandang ku jadi lebih bermakna dan berkesan. Kampus ini udah kasih banyak hal, 
+        tapi ke depan semoga fasilitas dan dukungan buat mahasiswa bisa lebih maksimal lagi."`,
         rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
     },
     {
