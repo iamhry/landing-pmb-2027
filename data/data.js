@@ -9,12 +9,13 @@ import partner7 from '@/assets/images/logo-mitra/logo_kss.svg'
 import alumni1 from '@/assets/images/alumni/01-rev.png'
 import alumni2 from '@/assets/images/alumni/02.png'
 import alumni3 from '@/assets/images/alumni/03.png'
-import alumni4 from '@/assets/images/team/4.jpg'
-import alumni5 from '@/assets/images/team/5.jpg'
-import alumni6 from '@/assets/images/team/6.jpg'
-import alumni7 from '@/assets/images/team/7.jpg'
-import alumni8 from '@/assets/images/team/8.jpg'
-
+import alumni4 from '@/assets/images/alumni/04.png'
+import alumni5 from '@/assets/images/alumni/05.png'
+import alumni6 from '@/assets/images/alumni/06.png'
+import alumni7 from '@/assets/images/alumni/07.png'
+import alumni8 from '@/assets/images/alumni/08.png'
+import alumni9 from '@/assets/images/alumni/09.png'
+import alumni10 from '@/assets/images/alumni/10.png'
 
 import course1 from '@/assets/images/course/1.jpg'
 import course2 from '@/assets/images/course/2.jpg'
@@ -478,24 +479,62 @@ export const clientData = [
         rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
     },
     {
-        image: team4,
-        name: 'Paul Phelan',
-        position: 'Student',
-        desc: `" Online learning requires discipline, but it’s worth it. I had to work on time management, but the flexibility and quality of the content made it rewarding. "`,
+        image: alumni4,
+        name: 'Annisaa  Fitri  Nurjannah',
+        position: 'Alumni',
+        desc: `" 
+        Selama menempuh pendidikan di Program Studi Gizi UMPKU, saya banyak belajar tentang ilmu gizi secara komprehensif dan aplikatif. Dukungan dan bimbingan dosen yang berdedikasi serta pengalaman praktik langsung di lapangan sangat memperkaya wawasan saya. Terima kasih kepada seluruh dosen yang telah membimbing dengan sabar dan penuh inspirasi. semoga ilmu yang didapat bisa bermanfaat untuk masa depan. 
+        "`,
         rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
     },
     {
-        image: team5,
-        name: 'Christa Smith',
-        position: 'Student',
-        desc: `" Taking online courses has helped me grow professionally. I could apply what I learned immediately at work, and the knowledge I gained was practical and up-to-date. "`,
+        image: alumni5,
+        name: 'Desi Gusmaini',
+        position: 'Alumni',
+        desc: `" 
+        Kampus UMPKU Adalah Kampus Yang Terbaik Khususnya Prodi Anestesi Untuk Mahasiswa Rpl, Semoga Kedepan Kampus Umpku Surakarta Tetap Menjadi Yang Terbaik
+        "`,
         rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
     },
     {
-        image: team6,
-        name: 'Calvin Carlo',
-        position: 'Student',
-        desc: `" The biggest advantage of online education is convenience, but it requires self-motivation. If you're committed, it’s a great way to advance your skills. "`,
+        image: alumni6,
+        name: 'Hadi Iwan Saputra',
+        position: 'Alumni',
+        desc: `" 
+        Menyenangkan kuliah d UM PKU krna bisa mengenal teman-teman dari beberapa daerah seluruh Indonesia dan mendapatkan pelajaran tentang anestesi dari Dosen2 yang baik dan perduli dengan Mahasiswanya
+        "`,
+        rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
+    },
+    {
+        image: alumni7,
+        name: 'Dwimas Ayu Saputri',
+        position: 'Alumni',
+        desc: `" 
+        Saya bangga bisa menjadi bagian dari UMPKU Surakarta, walau dalam setiap prosesnya terasa sangat berat dan melelahkan karena saya seorang ibu pekerja, namun berkat teman-teman, para Ibu dan bapak dosen yang tiada henti memberikan semangat dan dukungan sehingga saya dapat menyelesaikan pendidikan ini tepat waktu."`,
+        rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
+    },
+    {
+        image: alumni8,
+        name: 'LAMBOK EDI SURANTA TAMPUBOLON',
+        position: 'Alumni',
+        desc: `" 
+        Sangat menyenangkan Kuliah di Universitas Muhammadiyah Surakarta. Walau kampus Muslim, dan saya non muslim perlakuan dosen dan jajaran management dan teman-teman mahasiswa tidak membedakan dan saya merasa nyaman. Dan semoga tetap jaya untuk mendidik mahasiswa bangsa Indonesia yang kuliah di Universitas Muhammadiyah Surakarta."`,
+        rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
+    },
+     {
+        image: alumni9,
+        name: 'MOHAMAD ROFI`I',
+        position: 'Alumni',
+        desc: `" 
+        Belajar di usia yang sudah tidak muda lagi adalah pengalaman yang sangat berharga. Meski awalnya sulit beradaptasi dengan sistem daring , semangat dan dukungan dari dosen serta teman-teman sangat membantu.Pesan:Usia bukan halangan untuk terus belajar. Terima kasih kepada seluruh pihak yang telah membimbing dan mendukung proses belajar saya selama ini. "`,
+        rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
+    },
+     {
+        image: alumni9,
+        name: 'Arif Saputra',
+        position: 'Alumni',
+        desc: `" 
+       Kampus hebat, khususnya prodiku anestesi. Ibu kaprodi yang sangat ngemong. Dan semua dosen yang sangat memfasilitasi semua proses pendidikan ini. Bagian jadi bagian dari kampus ini. Masuk Intitut, keluar Universitas. Menyala UMPKU"`,
         rate: ['mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star', 'mdi mdi-star']
     },
 ]
