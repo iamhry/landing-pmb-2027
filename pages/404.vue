@@ -9,15 +9,16 @@
                         </div>
                         <div class="title-heading text-center my-auto">
                             <img :src="errorImg" class="mx-auto" alt=""/>
-                            <h1 class="my-6 md:text-4xl text-3xl font-bold">Page Not Found?</h1>
-                            <p class="text-slate-400">Whoops, this is embarassing. <br> Looks like the page you were looking for wasn't found.</p>
+                            <h1 class="my-6 md:text-4xl text-3xl font-bold">Halaman Tidak Ditemukan</h1>
+                            <p class="text-slate-400"> Ups... terjadi kesalahan. <br />
+                Halaman yang kamu cari tidak tersedia atau sudah dipindahkan.</p>
                             
                             <div class="mt-4">
                                 <NuxtLink to="/" class="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white">Back to Home</NuxtLink>
                             </div>
                         </div>
                         <div class="text-center">
-                            <p class="mb-0 text-slate-400">© {{year}} Edupath. Design & Develop with <i class="mdi mdi-heart text-red-600"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                            <FooterCopyright />
                         </div>
                     </div>
                 </div>
