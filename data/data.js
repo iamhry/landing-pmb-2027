@@ -448,24 +448,24 @@ export const categories = [
 ]
 export const counterData = [
     {
-        value: 1548,
-        symbol: '+',
-        title: 'Courses'
+        value: 95,
+        symbol: '%',
+        title: 'Tingkat Kelulusan Tepat Waktu'
     },
     {
-        value: 12,
-        symbol: '+',
-        title: 'Countries'
+        value: 87,
+        symbol: '%',
+        title: 'Kepuasan Mahasiswa'
     },
     {
-        value: 500,
-        symbol: 'K',
-        title: 'Students'
+        value: 120,
+        symbol: '+',
+        title: 'Kerja Sama Industri'
     },
     {
-        value: 80,
-        symbol: '+',
-        title: 'Instructors'
+        value: 90,
+        symbol: '%',
+        title: 'Lulusan Bekerja di Bidang Terkait'
     },
 ]
 
