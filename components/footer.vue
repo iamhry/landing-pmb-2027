@@ -99,7 +99,7 @@
                     </div>
 
                     <ul class="list-disc footer-list md:text-end text-center space-x-3">
-                        <li class="inline-block"><i class="mdi mdi-circle-medium text-gray-400"></i>
+                        <!-- <li class="inline-block"><i class="mdi mdi-circle-medium text-gray-400"></i>
                             <NuxtLink to="/terms" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
                                 Terms</NuxtLink>
                         </li>
@@ -110,7 +110,7 @@
                         <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i>
                             <NuxtLink to="/login" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">
                                 Login</NuxtLink>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
