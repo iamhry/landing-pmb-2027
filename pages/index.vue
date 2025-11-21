@@ -88,7 +88,7 @@
    <div class="grid md:grid-cols-12 grid-cols-1 mt-6">
       <div class="md:col-span-12 text-center">
         <NuxtLink
-          to="/data-mitra"
+          to="/mitra"
           class="text-slate-400 hover:text-violet-600 duration-500 ease-in-out font-medium inline-flex items-center"
         >
           Lihat Mitra Lainnya

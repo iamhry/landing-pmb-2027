@@ -12,3 +12,83 @@ export const biayaPendaftaran = [
         biaya : 'Rp. 200.000'
     },
 ];
+export const biayaUkt = [
+    {
+        prodi: "D3 - Keperawatan",
+        angsuran1: "Rp 4.000.000",
+        angsuran2: "Rp 3.700.000",
+        totalUKT: "Rp 7.700.000",
+        bgClass: "bg-white", // Untuk menentukan warna latar baris
+    },
+    {
+        prodi: "D4 - Keperawatan Anestesiologi",
+        angsuran1: "Rp 7.500.000",
+        angsuran2: "Rp 7.720.000",
+        totalUKT: "Rp 15.220.000",
+        bgClass: "bg-gray-50",
+    },
+    {
+        prodi: "D4 - Teknologi Rekayasa Elektro-Medis",
+        angsuran1: "Rp 5.000.000",
+        angsuran2: "Rp 3.800.000",
+        totalUKT: "Rp 8.800.000",
+        bgClass: "bg-white",
+    },
+    {
+        prodi: "S1 - Gizi",
+        angsuran1: "Rp 4.000.000",
+        angsuran2: "Rp 3.725.000",
+        totalUKT: "Rp 7.725.000",
+        bgClass: "bg-gray-50",
+    },
+    {
+        prodi: "S1 - Keperawatan",
+        angsuran1: "Rp 5.500.000",
+        angsuran2: "Rp 5.000.000",
+        totalUKT: "Rp 10.500.000",
+        bgClass: "bg-white",
+    },
+    {
+        prodi: "S1 - Informatika",
+        angsuran1: "Rp 2.000.000",
+        angsuran2: "Rp 1.750.000",
+        totalUKT: "Rp 3.750.000",
+        bgClass: "bg-gray-50",
+    },
+    {
+        prodi: "S1 - Kebidanan",
+        angsuran1: "Rp 4.000.000",
+        angsuran2: "Rp 3.400.000",
+        totalUKT: "Rp 7.400.000",
+        bgClass: "bg-white",
+    },
+    {
+        prodi: "S1 - Manajemen",
+        angsuran1: "Rp 1.500.000",
+        angsuran2: "Rp 1.650.000",
+        totalUKT: "Rp 3.150.000",
+        bgClass: "bg-gray-50",
+    },
+    {
+        prodi: "S1 - Hukum",
+        angsuran1: "Rp 2.000.000",
+        angsuran2: "Rp 1.950.000",
+        totalUKT: "Rp 3.950.000",
+        bgClass: "bg-white",
+    },
+    {
+        prodi: "S1 - Psikologi",
+        angsuran1: "Rp 3.000.000",
+        angsuran2: "Rp 2.950.000.",
+        totalUKT: "Rp 5.950.000",
+        bgClass: "bg-gray-50",
+    },
+    {
+        prodi: "Profesi Ners",
+        angsuran1: "Rp 4.500.000",
+        angsuran2: "Rp 4.305.000",
+        totalUKT: "Rp 8.805.000",
+        bgClass: "bg-white",
+    },
+    
+];
