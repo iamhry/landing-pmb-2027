@@ -120,36 +120,39 @@
                         <NuxtLink to="/program-studi" class="sub-menu-item">Program Studi</NuxtLink>
                     </li>
                     <li class="has-submenu parent-parent-menu-item"
-                        :class="['/biaya-pendaftaran', '/biaya-studi'].includes(current) ? 'active' : ''">
-                        <NuxtLink :to="[]" @click="submenu(openMenu === '/page-item' ? '' : '/page-item')">Biaya
-                        </NuxtLink><span class="menu-arrow"></span>
-                        <ul class="submenu" :class="[].includes(openMenu) ? 'open' : ''">
-                            <li :class="current === '/biaya-pendaftaran' ? 'active' : ''">
-                                <NuxtLink to="/biaya-pendaftaran" class="sub-menu-item">Biaya Pendaftaran</NuxtLink>
-                            </li>
-                            <li :class="current === '/biaya-studi' ? 'active' : ''">
-                                <NuxtLink to="/biaya-studi" class="sub-menu-item">Biaya Studi</NuxtLink>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu parent-parent-menu-item"
-                        :class="['/mitra', '/grid-sidebar', '/list', '/list-sidebar', '/youtube-listing', '/video-listing', '/course-detail', '/course-detail-two'].includes(current) ? 'active' : ''">
-                        <NuxtLink :to="[]" @click="submenu(openMenu === '/courses-item' ? '' : '/courses-item')">
-                            Informasi</NuxtLink><span class="menu-arrow"></span>
-                        <ul class="submenu"
-                            :class="['/courses-item', '/grid-item', '/list-item', '/video-item', '/detail-item'].includes(openMenu) ? 'open' : ''">
+            :class="['/biaya-pendaftaran', '/biaya-studi'].includes(current) ? 'active' : ''">
+            
+            <NuxtLink :to="[]" @click="submenu('biaya-menu')">Biaya</NuxtLink>
+            <span class="menu-arrow" @click="submenu('biaya-menu')"></span>
+            
+            <ul class="submenu" :class="openMenu === 'biaya-menu' ? 'open' : ''"> 
+                <li :class="current === '/biaya-pendaftaran' ? 'active' : ''">
+                    <NuxtLink to="/biaya-pendaftaran" class="sub-menu-item">Biaya Pendaftaran</NuxtLink>
+                </li>
+                <li :class="current === '/biaya-studi' ? 'active' : ''">
+                    <NuxtLink to="/biaya-studi" class="sub-menu-item">Biaya Studi</NuxtLink>
+                </li>
+            </ul>
+        </li>
 
-                            <li :class="current === '/evaluasi' ? 'active' : ''" class="parent-menu-item">
-                                <NuxtLink to="/evaluasi">Evaluasi</NuxtLink>
-                            </li>
-                            <li :class="current === '/mitra' ? 'active' : ''" class="parent-menu-item">
-                                <NuxtLink to="/mitra">Mitra</NuxtLink>
-                            </li>
-                            <li :class="current === '/faq' ? 'active' : ''" class="parent-menu-item">
-                                <NuxtLink to="/faq">FAQ</NuxtLink>
-                            </li>
-                        </ul>
-                    </li>
+        <li class="has-submenu parent-parent-menu-item"
+            :class="['/mitra', '/faq-umpku'].includes(current) ? 'active' : ''">
+            
+            <NuxtLink :to="[]" @click="submenu('informasi-menu')">Informasi</NuxtLink>
+            <span class="menu-arrow" @click="submenu('informasi-menu')"></span>
+            
+            <ul class="submenu" :class="openMenu === 'informasi-menu' ? 'open' : ''">
+                <li class="parent-menu-item">
+                    <NuxtLink to="https://docs.google.com/forms/d/e/1FAIpQLSeh5QpqEXVIBBvKcGbQALWFpfknIEMuQHvttzzT83hJTpW0yg/viewform?pli=1">Evaluasi</NuxtLink>
+                </li>
+                <li :class="current === '/mitra' ? 'active' : ''" class="parent-menu-item">
+                    <NuxtLink to="/mitra">Mitra</NuxtLink>
+                </li>
+                <li :class="current === '/faq-umpku' ? 'active' : ''" class="parent-menu-item">
+                    <NuxtLink to="/faq-umpku">FAQ</NuxtLink>
+                </li>
+            </ul>
+        </li>
 
                     <li :class="current === '/beasiswa' ? 'active' : ''">
                         <NuxtLink to="/beasiswa" class="sub-menu-item">Beasiswa</NuxtLink>
