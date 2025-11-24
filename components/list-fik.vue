@@ -1,11 +1,7 @@
 <template>
     <div :class="grid">
-        <div 
-            v-for="(item, index) in data" 
-            :key="index" 
-            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg 
-                   shadow-slate-100 dark:shadow-slate-800 transition duration-500 w-full mx-auto"
-        >
+        <div v-for="(item, index) in data" :key="index" class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg 
+             shadow-slate-100 dark:shadow-slate-800 transition duration-500 w-full mx-auto">
             <div class="md:flex">
 
                 <!-- GAMBAR -->
@@ -17,49 +13,27 @@
                 <div class="p-6 w-full">
 
                     <!-- TITLE -->
-                    <NuxtLink 
-                        :to="`/course-detail-two/${item.id}`" 
-                        class="text-lg hover:text-violet-600 font-medium block"
-                    >
+                    <NuxtLink :to="`/course-detail-two/${item.id}`"
+                        class="text-lg font-medium block hover:text-violet-600">
                         {{ item.title }}
                     </NuxtLink>
 
                     <!-- AKREDITASI -->
-                    <span 
-                        v-if="item.akreditasi"
-                        class="inline-block mt-2 px-3 py-1 text-xs font-semibold 
-                               bg-blue-100 text-blue-700 rounded-full"
-                    >
+                    <span v-if="item.akreditasi" class="inline-block mt-2 px-3 py-1 text-xs font-semibold
+                   bg-blue-100 text-blue-700 rounded-full">
                         Akreditasi: {{ item.akreditasi }}
                     </span>
 
-                    <!-- FILE AKREDITASI PDF -->
-                    <!-- <a 
-                        v-if="item.fileAkreditasi"
-                        :href="item.fileAkreditasi"
-                        target="_blank"
-                        class="block text-sm text-violet-600 hover:underline mt-2"
-                    >
-                        📄 Lihat File Akreditasi
-                    </a> -->
-
-                    <!-- DESKRIPSI -->
-                    <!-- <p class="text-slate-400 mt-3">
-                        {{ item.desc }}
-                    </p> -->
-
-                    <!-- BUTTON EXPLORE -->
+                    <!-- BUTTON -->
                     <div class="flex justify-between md:mt-12 mt-3">
-                        <NuxtLink 
-                            :to="`/course-detail-two/${item.id}`"
-                            class="h-8 px-3 tracking-wide inline-flex items-center justify-center 
-                                   font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 
-                                   text-violet-600 hover:text-white text-sm"
-                        >
-                            File Akreditasi 
-                            <i class="mdi mdi-arrow-right align-middle ms-1"></i>
-                        </NuxtLink>
+                        <a :href="item.fileAkreditasi" target="_blank" class="h-8 px-3 inline-flex items-center justify-center tracking-wide 
+           text-sm font-medium rounded-md bg-violet-600/10 text-violet-600 
+           hover:bg-violet-600 hover:text-white transition">
+                            File Akreditasi
+                            <i class="mdi mdi-arrow-right ms-1"></i>
+                        </a>
                     </div>
+
 
                 </div>
             </div>
