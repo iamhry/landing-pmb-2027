@@ -84,18 +84,16 @@
                     </h3>
                 </div>
                 <PartnerMitraIndex />
-                
-   <div class="grid md:grid-cols-12 grid-cols-1 mt-6">
-      <div class="md:col-span-12 text-center">
-        <NuxtLink
-          to="/mitra"
-          class="text-slate-400 hover:text-violet-600 duration-500 ease-in-out font-medium inline-flex items-center"
-        >
-          Lihat Mitra Lainnya
-          <i class="mdi mdi-arrow-right align-middle ml-2"></i>
-        </NuxtLink>
-      </div>
-    </div>
+
+                <div class="grid md:grid-cols-12 grid-cols-1 mt-6">
+                    <div class="md:col-span-12 text-center">
+                        <NuxtLink to="/mitra"
+                            class="text-slate-400 hover:text-violet-600 duration-500 ease-in-out font-medium inline-flex items-center">
+                            Lihat Mitra Lainnya
+                            <i class="mdi mdi-arrow-right align-middle ml-2"></i>
+                        </NuxtLink>
+                    </div>
+                </div>
             </section>
 
             <!-- <div class="container relative md:mt-24 mt-16">
