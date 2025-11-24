@@ -110,15 +110,15 @@
                         kampus untuk mempersiapkan langkah terbaikmu.</p>
                 </div>
 
-                <div class="grid grid-cols-1 relative mt-3">
+                <!-- <div class="grid grid-cols-1 relative mt-3">
                     <ClientOnly>
                         <CoursesSlider />
                     </ClientOnly>
-                </div>
+                </div> -->
 
                 <div class="grid md:grid-cols-12 grid-cols-1 mt-6">
                     <div class="md:col-span-12 text-center">
-                        <NuxtLink to="/grid" class="text-slate-400 hover:text-violet-600 duration-500 ease-in-out">Lihat
+                        <NuxtLink to="/" class="text-slate-400 hover:text-violet-600 duration-500 ease-in-out">Lihat
                             Berita Lainnya <i class="mdi mdi-arrow-right align-middle"></i></NuxtLink>
                     </div>
                 </div>
