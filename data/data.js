@@ -406,7 +406,7 @@ export const footerSocial = [
 ]
 
 export const footerLink1 = [
-    'Program Studi', 'Visi & Misi & Vision', 'Pendaftaran', 'Info Beasiswa', 'Biaya Kuliah'
+    'Program Studi', 'Visi & Misi', 'Pendaftaran', 'Info Beasiswa', 'Biaya Kuliah'
 ]
 export const footerLink2 = [
     'Tentang Kami', 'Fakultas & Jurusan', 'Dosen & Staff', 'Fasilitas Kampus', 'Berita & Event'

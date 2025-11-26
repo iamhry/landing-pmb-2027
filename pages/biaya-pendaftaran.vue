@@ -7,9 +7,10 @@
             <div class="container relative z-10 text-center">
                 <span class="text-white font-semibold mb-3 uppercase">Pendaftaran</span>
                 <h1 class="text-white md:text-4xl text-2xl font-bold mb-3">Biaya Pendaftaran</h1>
-                <p class="text-white/80 max-w-xl mx-auto">Biaya pendaftaran PMB UMPKU Tahun 2026/2027 tersedia
-                        dalam dua jalur: Reguler & Alih Jenjang/RPL.
-                        Pilih jalur sesuai kebutuhanmu dan mulai langkah pertama menuju kampus impian!</p>
+                <p class="text-white/80 max-w-xl mx-auto">Biaya pendaftaran PMB UMPKU Tahun 2026/2027 
+                    tersedia dalam dua jalur: Reguler & Alih Jenjang/RPL.
+                    Pilih jalur sesuai kebutuhanmu dan mulai langkah pertama menuju kampus impian!
+                    </p>
             </div>
         </section>
         <section class="relative md:py-24 py-16 ">
