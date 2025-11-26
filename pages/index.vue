@@ -10,7 +10,7 @@
                     <span class="text-yellow-400 font-semibold mb-3 uppercase">#Kampus_Sehat_Mencerahkan</span>
                     <h1
                         class="font-bold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl text-white mb-5">
-                        Pendaftaran Mahasiswa Baru
+                        Penerimaan Mahasiswa Baru
                         <br>2026/2027
                     </h1>
                     <p class="text-white/50 text-lg max-w-xl mx-auto">Setiap mimpi butuh tempat untuk tumbuh.
