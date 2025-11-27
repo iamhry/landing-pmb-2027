@@ -77,6 +77,7 @@
                     </div>
                 </div>
             </div>
+
             <section class="pt-6">
                 <div class="grid grid-cols-1 pb-8 text-center">
                     <h3 class=" mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
@@ -95,7 +96,35 @@
                     </div>
                 </div>
             </section>
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-10">
+                    <div class="relative">
+                        <img :src="bea" class="rounded-lg shadow-lg" alt="Mahasiswi Beasiswa" />
+                        <div
+                            class="absolute -bottom-10 -left-10 w-40 h-40 bg-gray-200 rounded-full mix-blend-multiply opacity-50 z-[-1]">
+                        </div>
+                        <div
+                            class="absolute -top-10 -right-10 w-32 h-32 bg-violet-200 rounded-full mix-blend-multiply opacity-50 z-[-1]">
+                        </div>
+                    </div>
 
+                    <div class="mt-8 md:mt-0">
+                        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-3">Beasiswa</h2>
+                        <p class="text-red-500 font-semibold text-lg mb-4">Wujudkan Mimpi Kuliah Tanpa Batasan Biaya</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Kami percaya setiap mahasiswa berhak mendapatkan pendidikan terbaik. Temukan beragam
+                            <strong>program beasiswa</strong>  yang dirancang untuk mendukung calon mahasiswa berprestasi dan
+                            berdedikasi, memastikan aspek finansial tidak lagi menjadi penghalang bagi masa depan Anda.
+                        </p>
+                        <div class="mt-6">
+                            <NuxtLink to="/beasiswa"
+                                class="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white hover:bg-violet-700 duration-500 ease-in-out">
+                                Lihat Semua Peluang <i class="mdi mdi-arrow-right align-middle ms-1"></i>
+                            </NuxtLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- <div class="container relative md:mt-24 mt-16">
                 <AboutOne :title="true" />
             </div> -->
@@ -187,5 +216,6 @@ import home4 from '@/assets/images/team/img-4.jpg'
 import home5 from '@/assets/images/team/img-12.jpg'
 import home6 from '@/assets/images/team/img-5.jpg'
 import home7 from '@/assets/images/team/img-8.jpg'
+import bea from '@/assets/images/team/t-6.jpg'
 import Syarat from '~/components/syarat.vue'
 </script>
