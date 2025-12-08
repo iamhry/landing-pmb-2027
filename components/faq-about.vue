@@ -21,7 +21,7 @@
       </div>
 
       <!-- BUBBLE TEAM -->
-      <div class="absolute md:top-1 top-10 md:-start-20 -start-2 p-4 rounded-lg shadow-md 
+      <!-- <div class="absolute md:top-1 top-10 md:-start-20 -start-2 p-4 rounded-lg shadow-md 
                   dark:shadow-gray-800 bg-white dark:bg-slate-900 w-56 z-20">
         <h5 class="font-semibold mb-3">Dosen</h5>
         <ul class="flex items-center">
@@ -46,7 +46,7 @@
             </NuxtLink>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
 
     <!-- POPUP VIDEO -->
