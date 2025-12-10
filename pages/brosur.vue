@@ -15,32 +15,45 @@
         </section>
         <section class="relative pt-16 pb-12 md:pt-24 md:pb-16 lg:pt-32 lg:pb-24 bg-gray-50 dark:bg-slate-900">
             <div class="container relative">
-                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-10 justify-center">
-                    <div class="lg:col-span-12 md:col-span-12 mx-auto text-center w-full max-w-4xl">
-                        <!-- <h5
-                            class="mb-8 text-3xl md:text-2xl lg:text-3xl font-extrabold text-gray-900 dark:text-white leading-snug">
-                            Brosur Penerimaan Mahasiswa Baru <br> <span class="text-violet-600">UMPKU Surakarta</span>
-                        </h5> -->
+               <div class="lg:col-span-12 md:col-span-12 mx-auto text-center w-full max-w-4xl">
+    <h2 class="mb-4 text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white leading-snug">
+        Pilih <span class="text-violet-600">Jalur Penerimaan</span> Anda
+    </h2>
+    <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">
+        Silakan pilih brosur sesuai jalur yang Anda minati: <strong>Reguler</strong> untuk lulusan baru, atau <strong>RPL</strong> untuk yang berpengalaman.
+    </p>
 
-                        <div class="relative overflow-hidden rounded-2xl shadow-2xl shadow-violet-500/30 cursor-pointer group mb-6"
-                            @click="toggleZoom">
-                            <img :src="productImg" alt="Visual Brosur Utama"
-                                class="w-full h-auto object-cover transition-all duration-500 group-hover:scale-[1.01]" />
+    <div class="flex justify-center space-x-4 mb-10">
+        <button @click="changeBrochure('reguler')"
+            :class="['h-12 px-6 tracking-wide font-bold rounded-lg transition duration-300 transform', 
+                     selectedBrochure === 'reguler' ? 'bg-violet-600 text-white shadow-lg shadow-violet-500/50 hover:bg-violet-700' : 'bg-white border border-gray-300 text-gray-700 dark:bg-slate-800 dark:border-slate-700 dark:text-white/70 hover:bg-gray-100 dark:hover:bg-slate-700']">
+            <i class="iconoir-user-star me-2"></i>Reguler
+        </button>
+        <button @click="changeBrochure('rpl')"
+            :class="['h-12 px-6 tracking-wide font-bold rounded-lg transition duration-300 transform', 
+                     selectedBrochure === 'rpl' ? 'bg-violet-600 text-white shadow-lg shadow-violet-500/50 hover:bg-violet-700' : 'bg-white border border-gray-300 text-gray-700 dark:bg-slate-800 dark:border-slate-700 dark:text-white/70 hover:bg-gray-100 dark:hover:bg-slate-700']">
+            <i class="iconoir-medal me-2"></i>  RPL 
+        </button>
+    </div>
 
-                            <div
-                                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                <i class="iconoir-zoom-in text-white text-4xl p-3 bg-white/30 rounded-full"></i>
-                            </div>
-                        </div>
+    <div class="relative overflow-hidden rounded-2xl shadow-2xl shadow-violet-500/30 cursor-pointer group mb-6"
+        @click="toggleZoom">
+        <img :src="productImg" alt="Visual Brosur Utama"
+            class="w-full h-auto object-cover transition-all duration-500 group-hover:scale-[1.01]" />
 
-                        <div class="flex justify-center mt-6">
-                            <button type="button" @click="downloadBrosur"
-                                class="h-12 px-8 tracking-wide inline-flex items-center justify-center font-bold rounded-lg bg-violet-600 text-white shadow-lg shadow-violet-500/50 hover:bg-violet-700 transition duration-300 transform hover:scale-[1.02] text-base">
-                                <i class="iconoir-download me-2"></i> Unduh Brosur PMB UMPKU
-                            </button>
-                        </div>
-                    </div>
-                </div>
+        <div
+            class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <i class="iconoir-zoom-in text-white text-4xl p-3 bg-white/30 rounded-full"></i>
+        </div>
+    </div>
+
+    <div class="flex justify-center mt-6">
+        <button type="button" @click="downloadBrosur"
+            class="h-12 px-8 tracking-wide inline-flex items-center justify-center font-bold rounded-lg bg-violet-600 text-white shadow-lg shadow-violet-500/50 hover:bg-violet-700 transition duration-300 transform hover:scale-[1.02] text-base">
+            <i class="iconoir-download me-2"></i> Unduh Brosur PMB UMPKU ({{ selectedBrochure === 'reguler' ? 'Reguler' : 'RPL' }})
+        </button>
+    </div>
+</div>
             </div>
         </section>
 
@@ -73,27 +86,43 @@
 
 <script setup>
 import { ref, watch } from 'vue';
-import productImg from '@/assets/images/brosur/brosur-1.jpeg';
+import brochureReguler from '@/assets/images/brosur/brosur-1.jpeg'; 
+import brochureRPL from '@/assets/images/brosur/brosur-rpl.jpeg'; 
 import bg from '@/assets/images/team/t-3.jpg'
-// --- LOGIKA ZOOM GAMBAR ---
+
+const selectedBrochure = ref('reguler'); 
+
+const productImg = ref(brochureReguler);
+
+watch(selectedBrochure, (newSelection) => {
+    if (newSelection === 'reguler') {
+        productImg.value = brochureReguler;
+    } else if (newSelection === 'rpl') {
+        productImg.value = brochureRPL;
+    }
+});
+
+const changeBrochure = (type) => {
+    selectedBrochure.value = type;
+};
+
 const isZoomed = ref(false);
 
 const toggleZoom = () => {
     isZoomed.value = !isZoomed.value;
 };
 
-// Mengontrol scrolling body saat modal terbuka
 watch(isZoomed, (newValue) => {
     document.body.style.overflow = newValue ? 'hidden' : '';
 });
 
 
-// --- LOGIKA DOWNLOAD GAMBAR ---
 const downloadBrosur = () => {
+    const fileName = selectedBrochure.value === 'reguler' ? 'brosur_pmb_reguler_umpku.jpeg' : 'brosur_pmb_rpl_umpku.jpeg';
     const link = document.createElement('a');
 
-    link.href = productImg;
-    link.download = 'brosur_pmb_umpku.jpeg';
+    link.href = productImg.value; 
+    link.download = fileName;
 
     document.body.appendChild(link);
     link.click();
