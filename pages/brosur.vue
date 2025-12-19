@@ -17,7 +17,7 @@
             <div class="container relative">
                <div class="lg:col-span-12 md:col-span-12 mx-auto text-center w-full max-w-4xl">
     <h2 class="mb-4 text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white leading-snug">
-        Pilih <span class="text-violet-600">Jalur Penerimaan</span> Anda
+        Pilih <span class="text-violet-600">Jalur Seleksi</span> Anda
     </h2>
     <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">
         Silakan pilih brosur sesuai jalur yang Anda minati: <strong>Reguler</strong> untuk lulusan baru, atau <strong>RPL</strong> untuk yang berpengalaman.
