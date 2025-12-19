@@ -160,6 +160,9 @@
                     <li :class="current === '/brosur' ? 'active' : ''">
                         <NuxtLink to="/brosur" class="sub-menu-item">Brosur</NuxtLink>
                     </li>
+                     <li :class="current === '/kontak' ? 'active' : ''">
+                        <NuxtLink to="/kontak" class="sub-menu-item">Kontak</NuxtLink>
+                    </li>
                 </ul>
             </div>
         </div>
