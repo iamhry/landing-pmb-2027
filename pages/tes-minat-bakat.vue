@@ -73,6 +73,12 @@
                   </div>
                 </div>
 
+                <transition name="fade">
+                  <p v-if="errorMessage" class="text-center text-rose-500 text-[10px] font-black uppercase tracking-widest mb-4">
+                    {{ errorMessage }}
+                  </p>
+                </transition>
+
                 <button @click="startTest"
                         class="w-full py-5 bg-violet-600 hover:bg-violet-700 text-white rounded-[1.5rem] font-black shadow-2xl shadow-violet-600/40 transition-all mt-6 uppercase tracking-[2px] text-sm active:scale-95">
                   Mulai Analisis Sekarang
@@ -290,7 +296,7 @@ ChartJS.register(Title, Tooltip, Legend, LineElement, PointElement, CategoryScal
 const step = ref('identity')
 const currentIndex = ref(0)
 const identity = ref({nama: '', usia: '', gender: '', tanggal: ''})
-
+const errorMessage = ref('')
 // DATA 24 SOAL LENGKAP DENGAN MAPPING DIMENSI ASLI (Sesuai File DISCTEST.csv)
 const questions = [
   {
@@ -663,7 +669,13 @@ const currentInfo = computed(() => {
 })
 
 const startTest = () => {
-  if (identity.value.nama && identity.value.usia) step.value = 'test'
+  if (identity.value.nama && identity.value.usia && identity.value.gender) {
+    errorMessage.value = '' // Reset error jika sukses
+    step.value = 'test'
+  } else {
+    errorMessage.value = 'Lengkapi dulu profil lu biar hasilnya akurat! 🔥'
+    setTimeout(() => { errorMessage.value = '' }, 3000)
+  }
 }
 const prev = () => currentIndex.value--
 const next = () => currentIndex.value++

@@ -92,3 +92,13 @@ export const biayaUkt = [
     },
     
 ];
+export const biayaRpl = [
+    { prodi: 'S1 Keperawatan & Ners (Non Alumni)', angsuran1: 'Rp. 7.250.000', angsuran2: 'Rp. 6.000.000', totalUKT: 'Rp. 13.250.000' },
+    { prodi: 'Profesi Ners (Non Alumni)', angsuran1: 'Rp. 8.500.000', angsuran2: 'Rp. 8.000.000', totalUKT: 'Rp. 16.500.000' },
+    { prodi: 'S1 Kebidanan (Non Alumni)', angsuran1: 'Rp. 6.750.000', angsuran2: 'Rp. 5.000.000', totalUKT: 'Rp. 11.750.000' },
+    { prodi: 'Profesi Bidan (Non Alumni)', angsuran1: 'Rp. 7.250.000', angsuran2: 'Rp. 6.500.000', totalUKT: 'Rp. 13.750.000' },
+    { prodi: 'S1 Informatika (Total 9 Juta)', angsuran1: 'Rp. 1.950.000', angsuran2: 'Rp. 1.950.000', totalUKT: 'Tahap 1 & 2' },
+    { prodi: 'D4 Elektromedis (Total 20 Juta)', angsuran1: 'Rp. 4.650.000', angsuran2: 'Rp. 4.300.000', totalUKT: 'Tahap 1 & 2' },
+    { prodi: 'S1 Gizi (Total 21.5 Juta)', angsuran1: 'Rp. 4.900.000', angsuran2: 'Rp. 5.300.000', totalUKT: 'Tahap 1 & 2' },
+    { prodi: 'DIV Anestesiologi', angsuran1: 'Rp. 13.200.000', angsuran2: 'Rp. 13.000.000', totalUKT: 'Rp. 26.200.000' },
+];
