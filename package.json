@@ -13,11 +13,13 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.9",
+    "chart.js": "^4.5.1",
     "feather-icons": "^4.29.2",
     "nuxt": "^3.14.1592",
     "swiper": "^11.1.15",
     "tiny-slider": "^2.9.4",
     "vue": "latest",
+    "vue-chartjs": "^5.3.3",
     "vue-countup-v3": "^1.4.2",
     "vue-easy-lightbox": "^1.19.0",
     "vue-router": "latest",
