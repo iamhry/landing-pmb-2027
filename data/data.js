@@ -566,7 +566,7 @@ export const faqData = [
         id: 1,
         title: 'Syarat Pendaftaran Online',
         desc: `
-            1. Akses laman <Strong><a href="https://admission.umpku.ac.id/site/landing" target="_blank">pmb.umpku.ac.id</a></Strong><br>
+            1. Akses laman <Strong><a href="https://admisi.umpku.ac.id/site/landing" target="_blank">pmb.umpku.ac.id</a></Strong><br>
             2. Buat akun dan isi formulir pendaftaran<br>
             3. Upload dokumen persyaratan:<br>
             - KTP<br>

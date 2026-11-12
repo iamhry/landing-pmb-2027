@@ -30,7 +30,7 @@
       <ul class="buy-button list-none mb-0">
 
         <li class="inline-block relative">
-          <NuxtLink to="https://admission.umpku.ac.id/" target="_blank"
+          <NuxtLink to="https://admisi.umpku.ac.id/" target="_blank"
                     class=" inline-flex items-center justify-center px-4 py-2 text-white bg-violet-600 hover:bg-violet-700 rounded-md transition duration-300">
             <i data-feather="log-in" class="size-4 me-2"></i>Login
           </NuxtLink>

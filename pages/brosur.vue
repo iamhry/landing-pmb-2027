@@ -86,9 +86,10 @@
 
 <script setup>
 import { ref, watch } from 'vue';
-import brochureReguler from '@/assets/images/brosur/brosur-1.jpeg'; 
-import brochureRPL from '@/assets/images/brosur/brosur-rpl.jpeg'; 
+import brochureRPL from '@/assets/images/brosur/brosur-rpl.jpeg';
 import bg from '@/assets/images/team/t-3.jpg'
+
+const brochureReguler = '/flayer_pmb_2027_2028_umpku.webp'
 
 const selectedBrochure = ref('reguler'); 
 
@@ -118,7 +119,7 @@ watch(isZoomed, (newValue) => {
 
 
 const downloadBrosur = () => {
-    const fileName = selectedBrochure.value === 'reguler' ? 'brosur_pmb_reguler_umpku.jpeg' : 'brosur_pmb_rpl_umpku.jpeg';
+    const fileName = selectedBrochure.value === 'reguler' ? 'flayer_pmb_2027_2028_umpku.webp' : 'brosur_pmb_rpl_umpku.jpeg';
     const link = document.createElement('a');
 
     link.href = productImg.value; 
