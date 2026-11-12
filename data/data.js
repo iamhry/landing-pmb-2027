@@ -2,7 +2,6 @@ import partner1 from '@/assets/images/logo-mitra/rs_pku_solo.png'
 import partner2 from '@/assets/images/logo-mitra/rs-ortopedi.png'
 import partner3 from '@/assets/images/logo-mitra/rsud-dr-moewardi.png'
 import partner4 from '@/assets/images/logo-mitra/rs_soeradji.png'
-import partner5 from '@/assets/images/logo-mitra/logo-uns.png'
 import partner6 from '@/assets/images/logo-mitra/rs_uns.png'
 import partner7 from '@/assets/images/logo-mitra/logo_kss.svg'
 import partner8 from '@/assets/images/logo-mitra/faniaersapratama_logo.jpeg'
@@ -33,7 +32,6 @@ import alumni6 from '@/assets/images/alumni/06.png'
 import alumni7 from '@/assets/images/alumni/07.png'
 import alumni8 from '@/assets/images/alumni/08.png'
 import alumni9 from '@/assets/images/alumni/09.png'
-import alumni10 from '@/assets/images/alumni/10.png'
 
 import course1 from '@/assets/images/course/1.jpg'
 import course2 from '@/assets/images/course/2.jpg'
@@ -56,16 +54,6 @@ import team5 from '@/assets/images/team/5.jpg'
 import team6 from '@/assets/images/team/6.jpg'
 import team7 from '@/assets/images/team/7.jpg'
 import team8 from '@/assets/images/team/8.jpg'
-
-import video1 from '@/assets/images/course/video/1.mp4'
-import video2 from '@/assets/images/course/video/2.mp4'
-import video3 from '@/assets/images/course/video/3.mp4'
-import video4 from '@/assets/images/course/video/4.mp4'
-import video5 from '@/assets/images/course/video/5.mp4'
-import video6 from '@/assets/images/course/video/6.mp4'
-import video7 from '@/assets/images/course/video/7.mp4'
-import video8 from '@/assets/images/course/video/8.mp4'
-import video9 from '@/assets/images/course/video/9.mp4'
 
 export const partnerData = [
     partner1, partner2, partner3, partner4, partner6, partner7,partner8, partner9,
@@ -721,7 +709,6 @@ export const youtubeList = [
 export const videoList = [
     {
         id: 1,
-        video: video1,
         tag1: 'Free',
         tag2: 'Event',
         amount: 0,
@@ -734,7 +721,6 @@ export const videoList = [
     },
     {
         id: 2,
-        video: video2,
         tag1: 'Free',
         tag2: 'Event',
         amount: 19,
@@ -747,7 +733,6 @@ export const videoList = [
     },
     {
         id: 3,
-        video: video3,
         tag1: 'Free',
         tag2: 'Event',
         amount: 29,
@@ -760,7 +745,6 @@ export const videoList = [
     },
     {
         id: 4,
-        video: video4,
         tag1: 'Free',
         tag2: 'Event',
         amount: 15,
@@ -773,7 +757,6 @@ export const videoList = [
     },
     {
         id: 5,
-        video: video5,
         tag1: 'Free',
         tag2: 'Event',
         amount: 24,
@@ -786,7 +769,6 @@ export const videoList = [
     },
     {
         id: 6,
-        video: video6,
         tag1: 'Free',
         tag2: 'Event',
         amount: 29,
@@ -799,7 +781,6 @@ export const videoList = [
     },
     {
         id: 7,
-        video: video7,
         tag1: 'Free',
         tag2: 'Event',
         amount: 15,
@@ -812,7 +793,6 @@ export const videoList = [
     },
     {
         id: 8,
-        video: video8,
         tag1: 'Free',
         tag2: 'Event',
         amount: 24,
@@ -825,7 +805,6 @@ export const videoList = [
     },
     {
         id: 9,
-        video: video9,
         tag1: 'Free',
         tag2: 'Event',
         amount: 29,

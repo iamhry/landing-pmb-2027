@@ -29,7 +29,7 @@
                         <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
                             <div v-for="(item, index) in videoList" :key="index" class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
                                 <div class="p-3 pb-0 relative">
-                                    <video class="rounded-md" controls>
+                                    <video v-if="item.video" class="rounded-md" controls>
                                         <source :src="item.video" type="video/mp4">
                                     </video>
                                     <div class="absolute start-6 top-6">
